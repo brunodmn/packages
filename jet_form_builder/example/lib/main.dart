@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  Widget _build(BuildContext context) {
+  Widget _build() {
     ///Cre
     // JetForm jetForm = new JetForm();
 
@@ -33,24 +33,14 @@ class MyHomePage extends StatelessWidget {
       new JetDisplayItem(
           type: JetFormTypes.text, label: 'Amount', text: '35,00')
     ]);
+    
     //Row 2
     listParent.add([
       new JetDisplayItem(
-          type: JetFormTypes.text, label: 'Payment date', text: '30/02'),
-      new JetDisplayItem(
-          type: JetFormTypes.text, label: 'Payment amount', text: '35,00')
+          type: JetFormTypes.text, label: 'Obs', text: 'Already paid, this will show all over the available space')
     ]);
+
     //Row 3
-    listParent.add([
-      new JetDisplayItem(
-          type: JetFormTypes.text, label: 'Obs', text: 'Already paid')
-    ]);
-    //Row 4
-    listParent.add([
-      new JetDisplayItem(
-          type: JetFormTypes.text, label: 'Bill code', text: '321321321321')
-    ]);
-    //Row 5
     listParent.add([
       new JetDisplayItem(
           type: JetFormTypes.button,
@@ -69,7 +59,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: _build(context),
+      child: _build(),
     );
   }
 }
