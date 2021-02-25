@@ -1,4 +1,5 @@
 library jet_form_builder;
+
 import 'package:flutter/material.dart';
 
 enum JetFormTypes { text, button }
@@ -123,19 +124,18 @@ class JetDisplay extends StatelessWidget {
                   ],
                 ));
         }
-        listWidgets.add(
-          Container(
-            height: 40,            
-            child: ListView.separated(
-            physics: BouncingScrollPhysics(),
-            shrinkWrap: true,
-            scrollDirection: Axis.horizontal,
+        listWidgets.add(Container(
+          height: 40,
+          child: ListView.separated(
+              physics: BouncingScrollPhysics(),
+              shrinkWrap: true,
+              scrollDirection: Axis.horizontal,
               itemBuilder: (b, i) {
                 return listWidgetsChild[i];
               },
-              separatorBuilder: (bx, ix) =>  SizedBox(width: 4),
+              separatorBuilder: (bx, ix) => SizedBox(width: 4),
               itemCount: listWidgetsChild.length),
-          ));
+        ));
       }
     }
     //builde final list
@@ -149,15 +149,13 @@ class JetDisplay extends StatelessWidget {
             );
           });
     }
-
-    // TODO: implement build
-    throw UnimplementedError();
+    print('should not come to here...CHECK');
+    return Container();
   }
 }
 
 ///model class to be displayed on [JetDisplay] widget
 class JetDisplayItem {
-
   ///type of content information to be displayed
   final JetFormTypes type;
 
