@@ -24,7 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   jet_form_builder:
-    path: ../../
+    path: ../
 
 
   # The following adds the Cupertino Icons font to your application.
