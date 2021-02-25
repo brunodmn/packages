@@ -2,9 +2,6 @@
 
 A simple way to autogenerate form like content to show information and allow user interaction.
 
-## Display
-![alt text](https://github.com/brunodmn/packages/blob/master/jet_form_builder/example/sample_ss.png?raw=true)
-
 ## Usage
  You just need to add the items you want to display in a nested list, and call `JetDisplay` passing this list as parameter;
 
@@ -49,3 +46,7 @@ A simple way to autogenerate form like content to show information and allow use
     
     
 ```
+
+## Result
+![alt text](https://github.com/brunodmn/packages/blob/master/jet_form_builder/example/sample_ss.png?raw=true)
+
